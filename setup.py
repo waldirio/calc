@@ -11,7 +11,7 @@ setuptools.setup(
     description="A small calc example package",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/example-project",
+    url="https://github.com/waldirio/calc",
     packages=setuptools.find_packages(),
     classifiers=(
         "Programming Language :: Python :: 3",
