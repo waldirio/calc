@@ -1,10 +1,6 @@
-import sys
-
-sys.path.insert(0,'/home/wpinheir/code/calc/calc')
-
-from calc import *
+from calc.calc import Calc
 
 def test_sum():
-    n1 = Calc()
-    assert n1.sum_call(3,6) == 9
+    n1 = Calc(3,6)
+    assert n1.sum_call() == 9
 

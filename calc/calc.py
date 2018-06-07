@@ -4,43 +4,51 @@
 class Calc():
     """ Calculator Class """
 
-    def sum_call(self, first, second):
+    def __init__(self, first, second):
+        self._first = first
+        self._second = second
+
+    def sum_call(self):
         """ Sum Def """
-        return first + second
+        return self._first+self._second
 
-    def div_call(self, first, second):
+    def div_call(self):
         """ Div Def """
-        return first/second
+        return self._first/self._second
 
-    def mult_call(self, first, second):
+    def mult_call(self):
         """ Mult Def """
-        return first*second
+        return self._first*self._second
 
-    def subs_call(self, first, second):
+    def sub_call(self):
         """ Subs Def """
-        return first-second
+        return self._first-self._second
 
 
 def main():
+    """ Initiate the Calc """
+
+    first_value = 50
+    second_value = 39
 
     # Object creation
-    n1 = Calc()
+    calc_run = Calc(first_value, second_value)
 
-    # Sum of 2 and 3
-    aux = n1.sum_call(2, 3)
-    print("Sum of 2 + 3 is: " + str(aux))
+    # Sum
+    print("Sum of {} + {} is: {}".format(first_value, second_value,
+                                         calc_run.sum_call()))
 
-    # Division of 10 and 5
-    aux = n1.div_call(10, 2)
-    print("Division of 10 / 5 is: " + str(aux))
+    # Division
+    print("Division of {} / {} is: {}".format(first_value, second_value,
+                                              calc_run.div_call()))
 
-    # Multiplication of 2 and 10
-    aux = n1.mult_call(2, 10)
-    print("Multiplication of 2 * 10 is: " + str(aux))
+    # Multiplication
+    print("Multiplication of {} * {} is: {}".format(first_value, second_value,
+                                                    calc_run.mult_call()))
 
-    # Subtraction of 100 and 30
-    aux = n1.subs_call(100, 30)
-    print("Subtraction of 100 - 30 is: " + str(aux))
+    # Subtraction
+    print("Subtraction of {} - {} is: {}".format(first_value, second_value,
+                                                 calc_run.sub_call()))
 
 
 if __name__ == '__main__':
