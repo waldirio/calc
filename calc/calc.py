@@ -30,11 +30,6 @@ def main():
 
     first_value = 50
     second_value = 39
-# hello waldirio
-
-# asfaasfasfa
-
-# asfaasfasfa
 
     # Object creation
     calc_run = Calc(first_value, second_value)
